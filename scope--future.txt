@@ -1,1 +1,14 @@
 Add agentic ai framework.
+Based on the Software Requirements Specification (SRS) for OpenIDE v1.0, the future scope of the project involves expanding beyond local file management into a more robust development environment. While version 1.0 is strictly limited to local file system management within user-level permissions, the document highlights several areas where the system is designed to grow.Here is the future scope for OpenIDE based on the provided documentation:
+
+🛠️ Advanced Integrated Development FeaturesThe current version intentionally excludes several high-level IDE features to maintain a lightweight profile. Future iterations could integrate:Integrated Build Systems: Adding the ability to compile and build projects directly from the terminal interface.Graphical Debugging Tools: Moving beyond a pure text interface to include visual debugging support.Version Control Functionality: Built-in integration for systems like Git to manage code repositories.Collaborative Editing: Allowing multiple users to work on the same files simultaneously.
+
+🌐 Connectivity and Cloud IntegrationVersion 1.0 operates exclusively as a standalone, local application. Future scope includes:Network Synchronization: Implementing services to sync files across different machines.Cloud Integration: Connecting the IDE to cloud storage or remote development environments.
+
+💻 System and UI EnhancementsThe architecture is specifically designed to support modular enhancements without redesigning the core logic. Potential updates include:Advanced Navigation: Implementing sorting and filtering mechanisms for directory listings.Broadened Compatibility: While currently focused on POSIX-compliant systems (Linux, BSD, macOS), the project could expand to other environments.UI Versatility: Adapting the interface for extreme window resizing or different terminal capabilities.
+
+📈 Scalability and PerformanceThe SRS establishes a foundation for handling larger workloads. Future development may focus on:High-Volume Management: Optimizing the system to handle directories with exceptionally large numbers of files without proportional performance degradation.Deep Recursion Optimization: Refining the search module to handle even deeper nested structures with more efficient memory growth.
+
+🏗️ Architectural EvolutionBecause the system is built with logically separated modules (Navigation, File Operations, Batch Processing, Search, and Editor Integration), future maintainers can update individual components independently. This modularity ensures that "future enhancements... shall be implementable without redesigning core navigation logic".
+
+
