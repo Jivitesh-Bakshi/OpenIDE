@@ -88,6 +88,13 @@ typedef struct {
     int is_dir;
 } SearchResult;
 
+typedef struct {
+    char name[256];
+    char path[MAX_PATH];
+    int is_dir;
+    off_t size;
+} Entry;
+
 Entry entries[MAX_ENTRIES];
 int entry_count = 0;
 int selected = 0;
@@ -112,13 +119,6 @@ void format_size(off_t size, char *buf) {
     else if (size < 1024*1024*1024) sprintf(buf, "%.1fM", size/(1024.0*1024));
     else sprintf(buf, "%.2fG", size/(1024.0*1024*1024));
 }
-
-typedef struct {
-    char name[256];
-    char path[MAX_PATH];
-    int is_dir;
-    off_t size;
-} Entry;
 
 void duplicate_entry() {
     // Check if we have a valid selection
