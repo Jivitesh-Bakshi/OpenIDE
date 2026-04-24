@@ -10,6 +10,8 @@
 #include <stdio.h>
 #include <ctype.h>
 
+void load_directory(const char *path);
+
 /*
 ================================================================================
                            TERMINAL FILE MANAGER
